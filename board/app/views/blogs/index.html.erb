@@ -1,0 +1,8 @@
+<h1>홈화면입니다</h1>
+<%= link_to("게시물쓰기", new_blog_path)%> <br>
+
+<%@blogs.each do |b|%>
+제목 :<%=b.title %><br>
+내용 :<%=b.content%><br>
+<img src="<%=b.image_url%>">
+<%end%>

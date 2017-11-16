@@ -1,0 +1,7 @@
+<h1>Blogs#show</h1>
+<%=@blog.id%>번째 글
+제목 : <%=@blog.title%>
+내용 : <%=@blog.content%>
+이미지 : <img src="<%=@blog.image_url%>">
+<%= link_to("수정하기", edit_blog_path)%>
+<%= link_to("삭제하기", blog_path,method:"DELETE")%>
