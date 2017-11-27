@@ -1,0 +1,15 @@
+namespace :telegram do
+  task :hello do
+    puts "hello!!!"
+  end
+end
+namespace :db do
+  task :migrate do
+    p "rake db:migrate가 실행 되었습니다."
+  end
+end
+namespace :random_fruit do
+  task :random do
+    puts ["Apple", "Banana", "Orange", "Kiwi"].sample
+  end
+end

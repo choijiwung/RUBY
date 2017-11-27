@@ -1,0 +1,5 @@
+<h1>텔레그램 보내기</h1>
+<%= form_tag(msg_msg_send_path ,method:"get") do%>
+<%= text_field_tag(:msg) %>
+<%= submit_tag("제출하기") %>
+<% end%>

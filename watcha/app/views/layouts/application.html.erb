@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Watcha</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <%=link_to "로그아웃",destroy_user_session_path, method: "DELETE"%>
+    <%=link_to "로그인",  user_session_path, method: "POST"%>
+    <%= yield %>
+  </body>
+</html>
